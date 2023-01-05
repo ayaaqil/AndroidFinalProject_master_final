@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#529EA8"
+
+    tools:context=".Playing">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#529EA8"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:src="@android:drawable/btn_star_big_on" />
+
+    <Button
+        android:id="@+id/level1"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_margin="100dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/level1"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@drawable/playing_shape_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/level2"
+        android:layout_width="350dp"
+
+        android:layout_height="100dp"
+        android:layout_margin="100dp"
+        android:layout_marginTop="222dp"
+        android:text="@string/level2"
+        android:textColor="@color/white"
+        android:background="@drawable/playing_shape_btn"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        android:textColor="#FBF5F5"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
